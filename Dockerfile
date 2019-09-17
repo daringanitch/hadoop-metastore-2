@@ -1,8 +1,9 @@
-FROM gitlab.vigilance.solutions:5005/ttran/hadoop-base:hadoop-3.2.0-java8
+FROM dganitch/hadoop-base
 
 MAINTAINER Yiannis Mouchakis <gmouchakis@iit.demokritos.gr>
 MAINTAINER Ivan Ermilov <ivan.s.ermilov@gmail.com>
 MAINTAINER Tam ttran <ttran@illuminate.solutions>
+MAINTAINER Darin Ganitch <dganitch@illuminate.solutions>
 
 
 # Allow buildtime config of HIVE_VERSION
