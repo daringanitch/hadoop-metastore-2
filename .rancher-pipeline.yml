@@ -1,0 +1,17 @@
+stages:
+- name: build
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: ttran/hive-metastore:hadoop-3.2.0-hive-3.1.2
+      pushRemote: true
+      registry: gitlab.vigilance.solutions:5005
+- name: deploy
+  steps:
+  - applyYamlConfig:
+      path: ./deploy.yaml
+timeout: 60
+branch:
+  include:
+  - master
