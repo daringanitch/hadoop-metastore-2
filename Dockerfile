@@ -1,8 +1,5 @@
 FROM dganitch/hadoop-base
 
-MAINTAINER Yiannis Mouchakis <gmouchakis@iit.demokritos.gr>
-MAINTAINER Ivan Ermilov <ivan.s.ermilov@gmail.com>
-MAINTAINER Tam ttran <ttran@illuminate.solutions>
 MAINTAINER Darin Ganitch <dganitch@illuminate.solutions>
 
 
