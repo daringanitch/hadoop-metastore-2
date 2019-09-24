@@ -17,6 +17,7 @@ ENV HADOOP_HOME /opt/hadoop-$HADOOP_VERSION
 WORKDIR /opt
 COPY ./extra-libs/hadoop-aws-3.2.0.jar ./extra-libs/
 COPY ./extra-libs/aws-java-sdk-bundle-1.11.375.jar ./extra-libs/
+RUN ls -la
 
 #Install Hive and PostgreSQL JDBC
 RUN apt-get update && apt-get install -y wget procps && \
